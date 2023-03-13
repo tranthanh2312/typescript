@@ -1,0 +1,30 @@
+.nav__menu {
+    ul {
+        li {
+            a {
+                
+                transition: 0.5s;
+                &:hover {
+                    color: #000;
+                }
+
+                .ps-menu-label {
+                    span {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .nav__submenu  {
+            ul {
+                li {
+                    a {
+                        transition: 0.5s;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

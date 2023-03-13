@@ -1,0 +1,170 @@
+.lasted {
+    position: relative;
+
+    .slick-slider {
+
+        .custom-next-arrow,
+        .custom-prev-arrow {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            padding: 0 20px;
+            background-color: #fff;
+            transition: 0.7s;
+
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
+
+            &:hover {
+                background-color: #ccc;
+            }
+
+            i {
+                position: relative;
+                top: 30%;
+                font-size: 30px;
+            }
+        }
+
+        .slick-list {
+            max-width: 1200px;
+            margin: 0 auto;
+            // margin-right: 80px;
+            // margin-left: 80px;
+            padding: 80px 0;
+
+            @media screen and (max-width: 600px) {
+                margin: 0 20px;
+            }
+
+
+            .lasted__slide {
+                h2 {
+                    font-weight: 700;
+                    font-size: 48px;
+                }
+                padding: 0 40px;
+                margin: 0 40px;
+
+                p {
+                    font-weight: 500;
+                }
+
+                .lasted__rowcourse {
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    gap: 48px 48px;
+
+                    @media screen and (max-width: 816px) {
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                    }
+
+                    @media screen and (max-width: 816px) {
+                        grid-template-columns: repeat(1, minmax(0, 1fr));
+                    }
+
+
+                }
+
+                .lasted__colcourse {
+                    width: 100%;
+                    border-radius: 8px;
+                    border: 1px solid rgb(206 201 201 / 88%);
+                    font-size: 14px;
+
+                    @media screen and (max-width: 816px) {
+                        width: 60%;
+                        margin: 0 auto;
+                    }
+
+
+                    .item {
+                        padding: 24px;
+                        text-align: center;
+
+                        i {
+                            display: inline-block;
+                            width: 60px;
+                            height: 60px;
+                            line-height: 56px;
+                            text-align: center;
+                            border-radius: 8px;
+                            background-color: rgba(231, 245, 255, 1);
+                            color: #228be6;
+                            border: 1px solid transparent;
+                        }
+
+                        h4 {
+                            margin: 12px 10px 7px;
+                            font-size: 16px;
+                            font-weight: 300;
+                        }
+
+                        p {
+                            margin: 0;
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: #868e96;
+                        }
+                    }
+                }
+
+                .lasted__contacticon {
+                    i {
+                        cursor: pointer;
+                        margin-right: 10px;
+                    }
+                }
+
+                .row__image {
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    gap: 16px 16px;
+
+                    @media screen and (max-width: 992px) {
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        grid-template-columns: repeat(1, minmax(0, 1fr));
+                    }
+
+                    .col__image {
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                            border-radius: 8px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .custom-prev-arrow,
+    .custom-next-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 3;
+    }
+
+    .custom-next-arrow {
+        right: 0;
+    }
+
+    .btnpauseplay {
+        position: absolute;
+        bottom: 20px;
+        z-index: 7;
+        left: 47%;
+        button {
+            padding: 5px 10px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
